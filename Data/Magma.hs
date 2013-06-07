@@ -24,3 +24,6 @@ node = Node
 foldMap :: Magma m => (a -> m) -> BinaryTree a -> m
 foldMap f (Leaf x) = f x
 foldMap f (Node l r) = foldMap f l <> foldMap f r
+
+instance Magma (BinaryTree a) where
+  (<>) = Node
