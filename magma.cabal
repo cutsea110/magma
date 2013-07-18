@@ -18,5 +18,4 @@ cabal-version:       >=1.8
 library
   exposed-modules:     Data.Magma
   -- other-modules:       
-  build-depends:       base ==4.6.*
-
+  build-depends:       base ==4.*,  profunctors >= 3.2 && <4, semigroups >= 0.8.4 && <1, deepseq
