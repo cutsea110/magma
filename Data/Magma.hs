@@ -11,6 +11,7 @@ module Data.Magma
        , nodeRight
        ) where
 
+import Prelude hiding (foldMap)
 import qualified Data.Foldable as F
 import qualified Data.Monoid as M
 import Data.Profunctor
