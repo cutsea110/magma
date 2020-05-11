@@ -11,11 +11,11 @@ module Data.Magma
        , nodeRight
        ) where
 
-import Prelude hiding (foldMap)
+import Prelude hiding (foldMap, (<>))
 import qualified Data.Foldable as F
-import qualified Data.Monoid as M
+import qualified Data.Monoid as M hiding ((<>))
 import Data.Profunctor
-import qualified Data.Semigroup as S
+import qualified Data.Semigroup as S hiding ((<>))
 import Control.DeepSeq
 import Control.Applicative
 import Data.Traversable
