@@ -23,8 +23,12 @@ import Data.Traversable
 class Magma a where
   (<>) :: a -> a -> a
   
+
 instance Magma () where
   _ <> _ = ()
+
+instance (Magma a, Magma b) => Magma (a, b) where
+  (a, b) <> (a', b') = (a <> a', b <> b')
 
 instance Magma a => Magma (M.Dual a) where
   M.Dual a <> M.Dual b = M.Dual (b <> a)
