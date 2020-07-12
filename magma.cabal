@@ -4,7 +4,7 @@ cabal-version:       2.4
 -- http://haskell.org/cabal/users-guide/
 
 name:                magma
-version:             0.5.0.0
+version:             0.6.0.0
 synopsis:            magma is an algebraic structure.
 description:         magma is an algebraic structure consisting a set together with an binary operation.
 homepage:            https://github.com/cutsea110/magma
@@ -19,7 +19,7 @@ extra-source-files:  CHANGELOG.md
 library
   exposed-modules:     Data.Magma
   -- other-modules:       
-  build-depends:       base ^>=4.12.0.0,
+  build-depends:       base >=4.12.0.0 && <4.14,
                        profunctors >= 3.2 && <5.2,
                        semigroups >= 0.8.4 && <1,
                        deepseq
@@ -33,4 +33,4 @@ test-suite magma-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             MyLibTest.hs
-  build-depends:       base ^>=4.12.0.0, ghc-prim ^>=0.5.3
+  build-depends:       base >=4.12.0.0 && <4.14, ghc-prim ^>=0.5.3
