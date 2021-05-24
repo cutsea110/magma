@@ -4,7 +4,7 @@ cabal-version:       2.4
 -- http://haskell.org/cabal/users-guide/
 
 name:                magma
-version:             0.6.0.0
+version:             0.6.1.0
 synopsis:            magma is an algebraic structure.
 description:         magma is an algebraic structure consisting a set together with an binary operation.
 homepage:            https://github.com/cutsea110/magma
