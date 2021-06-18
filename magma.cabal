@@ -19,9 +19,9 @@ extra-source-files:  CHANGELOG.md
 library
   exposed-modules:     Data.Magma
   -- other-modules:       
-  build-depends:       base >=4.12.0.0 && <4.14,
-                       profunctors >= 3.2 && <5.2,
-                       semigroups >= 0.8.4 && <1,
+  build-depends:       base >=4.12.0.0 && <4.16,
+                       profunctors >= 3.2,
+                       semigroups >= 0.8.4,
                        deepseq
 
   hs-source-dirs:      src
@@ -33,4 +33,4 @@ test-suite magma-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             MyLibTest.hs
-  build-depends:       base >=4.12.0.0 && <4.14, ghc-prim ^>=0.5.3
+  build-depends:       base >=4.12.0.0 && <4.16, ghc-prim >=0.5.3
