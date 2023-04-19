@@ -102,8 +102,6 @@ instance Applicative BinaryTree where
   Node l r <*> t = Node (l <*> t) (r <*> t)
 
 instance Monad BinaryTree where
-  return = Leaf
-  {-# INLINE return #-}
   Leaf a >>= k = k a
   Node l r >>= k = Node (l >>= k) (r >>= k)
 

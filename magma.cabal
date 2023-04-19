@@ -4,7 +4,7 @@ cabal-version:       2.4
 -- http://haskell.org/cabal/users-guide/
 
 name:                magma
-version:             0.6.1.0
+version:             0.6.1.1
 synopsis:            magma is an algebraic structure.
 description:         magma is an algebraic structure consisting a set together with an binary operation.
 homepage:            https://github.com/cutsea110/magma
@@ -19,7 +19,7 @@ extra-source-files:  CHANGELOG.md
 library
   exposed-modules:     Data.Magma
   -- other-modules:       
-  build-depends:       base >=4.12.0.0,
+  build-depends:       base >=4.12.0.0 && <4.19,
                        profunctors >= 3.2,
                        semigroups >= 0.8.4,
                        deepseq
